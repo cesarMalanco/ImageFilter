@@ -20,14 +20,32 @@ button {
 #reset-btn {
     background-color: orange;
     color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: transform 0.3s ease;
 }
 
 #reset-btn:hover {
     background-color: rgb(255, 189, 65);
     color: white;
+    transform: translateY(-2px);
 }
 
 .btn-primary {
     background-color: gray !important;
     border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+.btn-dark {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: transform 0.3s ease;
+}
+
+.btn-dark:hover {
+    transform: translateY(-2px);
 }

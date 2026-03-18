@@ -6,6 +6,11 @@ img {
 
 .card {
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .card-text {
