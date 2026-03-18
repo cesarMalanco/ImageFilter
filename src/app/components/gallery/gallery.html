@@ -1,0 +1,18 @@
+<h2 id="title" class="text-center">CAR GALLERY</h2>
+
+<div class="d-flex flex-wrap gap-2 mb-3 justify-content-center gap-4">
+    <div *ngFor="let category of categories">
+        <button type="button" class="btn" [ngClass]="{
+                'btn-dark': activeCategoryId !== category.id,
+                'btn-primary': activeCategoryId === category.id}" (click)="filteredItemsByCategory(category)">
+            {{category.title}}
+        </button>
+    </div>
+    <button type="button" (click)="reset()" class="btn" id="reset-btn">Reset</button>
+</div>
+
+<div class="list-items container text-center">
+    <div class="d-flex flex-wrap justify-content-center gap-5">
+        <app-photo-item *ngFor="let item of filteredItems" [item]="item"></app-photo-item>
+    </div>
+</div>

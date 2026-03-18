@@ -1,0 +1,16 @@
+.navbar {
+    background-color: rgba(33, 37, 41, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgb(231, 124, 24);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.nav-link:hover {
+    color: gray !important;
+    transition: color 0.3s ease;
+}
+
+i {
+    padding-right: 10px;
+}
+
